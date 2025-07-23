@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.font-color{
+    color: rgb(233, 90, 8);
+}
+.btn-primary{
+    width:270px;
+    border: none;
+    height: 50px;
+    background-color:rgb(233, 90, 8) ;
+    color: white;
+margin-top: 16px;
+font-weight: 600;
+}
+/* navbar */
+.navbar{
+    display: flex;
+justify-content: space-between;
+align-items:center ;
+margin: 25px 55px ;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+
+}
+/* banner */
+.banner{
+display: flex;
+flex: 1;
+margin-left: 20px;
+background: rgb(245, 248, 255);
+}
+.banner-title{  
+margin-top: 40px;
+font-weight:bold;
+font-size: 65px;
+gap: 13px;
+}
+.banner-describtion{    
+font-weight: 400px;
+font-size: 20px;
+color: rgba(0, 0, 0, 0.5);
+margin: 16px 0;
+}
+/* card-section */
+.card-section{
+    text-align: center;
+    margin: 20px 30;
+}
+.section-title{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 16px 0;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin: 20px 20px;
+}
+.card-title{
+    font-weight: 500px;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
