@@ -87,3 +87,26 @@ margin: 16px 0;
     font-size: 22px;
     margin-bottom: 16px;
 }
+/* shop section */
+.shop-section{
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    margin-top: 150px;
+    position: relative;
+    
+}
+.badge{
+    position: absolute;
+ top: -200px;
+    left: 250px; 
+}
+ .left-shop img{
+     width: 540px;
+    height: 560px;  
+    margin-left: 20px;
+} 
+.right-shop-describtion{
+  margin: 20px 25px; 
+ padding: 20px;
+}
