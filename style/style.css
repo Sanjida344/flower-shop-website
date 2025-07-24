@@ -110,3 +110,41 @@ margin: 16px 0;
   margin: 20px 25px; 
  padding: 20px;
 }
+/* deals section */
+.deals{
+    text-align: center;
+    margin: 20px 30;
+}
+.deals-left{
+
+}
+.vertical-collage-1{
+}
+.vertical-collage-title{
+    font-weight: bold;
+    font-size: 20px;
+    /* color:white; */
+}
+/* join-section */
+.join-section{
+    margin-top: 50px;
+    background-image: url(../assets/news-letter-bg.png);
+   height: 500px; 
+    text-align: center;
+    padding:200px;
+}
+.join-title{
+    color: white;
+}
+.join-section input{
+width: 600px;
+padding: 10px;
+height: 35px;
+
+
+}
+.sub-btn{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
