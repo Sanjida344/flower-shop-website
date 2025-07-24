@@ -25,7 +25,7 @@ body{
     height: 50px;
     background-color:rgb(233, 90, 8) ;
     color: white;
-margin-top: 16px;
+ margin-top: 16px; 
 font-weight: 600;
 }
 /* navbar */
@@ -69,7 +69,7 @@ margin: 16px 0;
 /* card-section */
 .card-section{
     text-align: center;
-    margin: 20px 30;
+    margin: 20px 30px;
 }
 .section-title{
     font-weight: bold;
@@ -83,7 +83,7 @@ margin: 16px 0;
     margin: 20px 20px;
 }
 .card-title{
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 22px;
     margin-bottom: 16px;
 }
@@ -98,11 +98,12 @@ margin: 16px 0;
 }
 .badge{
     position: absolute;
+    width: 100%;
  top: -200px;
     left: 250px; 
 }
  .left-shop img{
-     width: 540px;
+    width: 540px;
     height: 560px;  
     margin-left: 20px;
 } 
@@ -129,10 +130,19 @@ margin: 16px 0;
 .join-section{
     margin-top: 50px;
     background-image: url(../assets/news-letter-bg.png);
-   height: 500px; 
+    width: 100%;
+    height: auto;
     text-align: center;
-    padding:200px;
+    padding:150px;
 }
+ .join-section form{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    
+} 
 .join-title{
     color: white;
 }
@@ -140,11 +150,107 @@ margin: 16px 0;
 width: 600px;
 padding: 10px;
 height: 35px;
-
-
 }
 .sub-btn{
     width: 100px;
     height: 35px;
-    cursor: pointer;
+    margin-top: auto;
 }
+/* footer-section */
+.feautures-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.logo-index{
+    padding-top:40px;
+}
+
+ footer ul li{
+    list-style: none;
+    padding-top: 30px;
+}
+ footer ul li a{
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+}
+ .social-icon img{margin-top: 30px;
+    justify-content: space-between;
+ width: 20px;
+height:20px; 
+}
+
+@media screen and (max-width:576px){
+    /* navbar */
+    .navbar{
+        gap: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar ul li:not(:last-child){
+        display: none;
+    }
+    /* banner */
+    .banner{
+flex-direction:  column-reverse;
+align-items: center;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.btn-primary{
+    width: 100%;
+}
+.shop-section{
+   flex-direction: column; 
+}
+.badge{
+   display: none;
+}
+ .left-shop img{
+     width: 100%;
+    height:auto;
+    margin-left: 5px;  
+   padding:10px 10px;  
+} 
+.right-shop-describtion{
+  margin: 10px ; 
+ padding: 10px;
+} 
+.join-section{
+    background-size: cover;
+    padding:30px 20px;
+}
+.join-section input{
+width:80%;
+}
+.sub-btn{
+    width: 50%;
+}
+.join-title{
+    font-size: 20px;
+}
+.join-section input{
+    width: 60%;
+}
+.sub-btn{
+    width: 30%;
+}
+.feautures-section{
+    flex-direction: column;
+}
+}
+
+
