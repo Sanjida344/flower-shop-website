@@ -93,25 +93,42 @@ margin: 16px 0;
     flex: 1;
     gap: 40px;
     margin-top: 150px;
-    position: relative;
+   
+}
+.left-shop{
+   position: relative;
 }
 .badge{
   position: absolute;
-   width: 250px;
- height: 250px;
-margin-top:-100px;
-padding-right: 45px 42px;
-margin-left: 280px;
+   width: 200px;
+ height: auto;
+top:-90px; 
+ right:-50px;
 z-index: 3;
+animation: spin-pause 2s linear infinite;
+background-color: transparent;
 }
- .left-shop img{
+@keyframes spin-pause{
+    0%{
+       transform: rotate(0deg); 
+    }
+    50%{
+       transform: rotate(200deg); 
+    }
+   1000%{
+       transform: rotate(360deg); 
+    }
+}
+ .main-image{
     width:540px;
-    height: 560px;  
+    height: 560px; 
     margin-left: 20px;
-} 
+}
+.list-item{
+    padding-left: 20px;
+}
 .right-shop-describtion{
-  margin: 20px 25px; 
- padding: 20px;
+ margin: 40px 30px;  
 }
 /* deals section */
  .deals{
@@ -129,13 +146,16 @@ z-index: 3;
     gap: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
+    opacity: 0.88;
 
 }
 .img-left-2{
     background-image: url(../assets/deal-ana.png);
+    opacity: 0.90;
 }
 .img-right{
     background-image: url(../assets/deal-zabo.png);
+    opacity: 0.88;
     width: 753px;
     height: 423.13px;
       display: flex;
@@ -244,6 +264,12 @@ height:20px;
     .banner{
 flex-direction:  column-reverse;
 align-items: center;
+}
+.banner-title{
+    font-size: 24px;
+}
+.section-title{
+    font-size: 24px;
 }
 .banner img{
     width: 100%;
